@@ -39,7 +39,7 @@ def csv_to_json(csv_path, json_path):
     print(employee_list[1])
 
     with open(json_path, mode='w') as output_file:
-      # json.dump(???, ???, indent=2)
+        json.dump(employee_list, output_file, indent=2)
 
 
 csv_to_json('data/employee_data.csv', 'data/employees.json')
